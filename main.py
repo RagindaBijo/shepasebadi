@@ -77,7 +77,18 @@ class User:
 
 
 
-film1=Ticket("ცისფერი მთები",50,1000)
+film1=Ticket("ცისფერი მთები",40,1000)
+film2=Ticket("კუკარაჩა",20,500)
+film3=Ticket("ტიტანიკი",50,300)
+user1=User("luka",30)
+user2=User("გიო",60)
+print("ფილმთა ჩამონათვალი:")
 film1.__str__()
-user1=User("luka",3)
+film2.__str__()
+film3.__str__()
+
+print(film2.compare_tickets_left(film1))
+
 user1.buy(film1)
+
+
